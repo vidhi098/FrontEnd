@@ -1,0 +1,118 @@
+/* CSS Examples */
+
+/* Image Box with Shadow Effects */
+.image-box {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+.shadow-image {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+.shadow-image:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+/* CSS Animations */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+.animation-box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.animation-box:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+/* Pagination */
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.pagination a:hover {
+    background-color: #ddd;
+    border-radius: 5px; /* Hover effect */
+}
+.pagination.no-spaces a {
+    padding: 8px;
+    margin: 2px; /* Pagination without spaces */
+}
+
+/* CSS Positions */
+.position-static {
+    position: static;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+}
+.position-relative {
+    position: relative;
+    left: 20px;
+    background-color: #d0d0d0;
+    padding: 10px;
+    margin: 10px;
+}
+.position-fixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #b0b0b0;
+    padding: 10px;
+    margin: 10px;
+}
+.position-absolute {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: #909090;
+    padding: 10px;
+    margin: 10px;
+}
+.position-sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: #707070;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Overflow Handling */
+.overflow-box {
+    width: 300px;
+    height: 100px;
+    overflow: scroll;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+/* Image with Opacity */
+.opacity-image {
+    width: 100%;
+    opacity: 0.5; /* Add opacity to image */
+    transition: opacity 0.3s;
+}
+.opacity-image:hover {
+    opacity: 1; /* Fully opaque on hover */
+}

@@ -1,0 +1,83 @@
+/* CSS and HTML Examples */
+
+/* Table Layouts */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+.table-fixed {
+    table-layout: fixed; /* Fixed table layout */
+}
+.table-auto {
+    table-layout: auto; /* Default table layout */
+}
+
+/* List Style */
+.list-style {
+    list-style-type: square; /* Change list style type */
+}
+
+/* Grid Example */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Gap between grid items */
+}
+.grid-item {
+    background-color: #b0e0e6;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Hero Image */
+.hero-image {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+.hero-text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Viewport Example */
+.viewport-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+.viewport-item {
+    background-color: #add8e6;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #999;
+}
+.responsive-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.responsive-video {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .grid-container, .viewport-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}

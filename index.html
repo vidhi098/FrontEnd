@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in one JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .counter {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Program Example</h1>
+    
+    <!-- Button to hide itself using 'this' keyword -->
+    <button onclick="this.style.display = 'none'">Click to Hide</button>
+
+    <!-- Button to sort fruits array -->
+    <button id="sortButton">Sort Fruits</button>
+    <p id="fruitsDisplay"></p>
+
+    <!-- Button to demonstrate call() and apply() -->
+    <button onclick="invokeFunctions()">Invoke Functions</button>
+
+    <!-- Counter using simple JavaScript -->
+    <button onclick="incrementCounter()">Count</button>
+    <p class="counter">Counter Value: <span id="counterValue">0</span></p>
+
+    <!-- Counter using getter and setter -->
+    <button onclick="incrementCounterWithAccessor()">Count with Accessor</button>
+    <p class="counter">Counter Value with Accessor: <span id="counterValueAccessor">0</span></p>
+
+    <!-- Button to display current date and time -->
+    <button id="dateButton">Show Date & Time</button>
+    <p id="dateTimeDisplay"></p>
+
+    <!-- Form with submit button for validation -->
+    <form onsubmit="return validateForm()">
+        <input type="text" id="textInput" placeholder="Enter text">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

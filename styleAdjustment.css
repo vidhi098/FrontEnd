@@ -1,0 +1,69 @@
+/* Table with Black Border and Hover Effect */
+.hover-table {
+    border: 2px solid black; /* Black border for table */
+    width: 100%;
+    border-collapse: collapse;
+}
+.hover-table th, .hover-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+.hover-table:hover {
+    background-color: lightgray; /* Change color on hover */
+}
+
+/* Visibility and Display Examples */
+.visibility-hidden {
+    visibility: hidden; /* Element is hidden, but space is reserved */
+}
+.display-none {
+    display: none; /* Element is not displayed and no space is reserved */
+}
+.display-inline {
+    display: inline; /* Element is displayed inline */
+}
+.display-block {
+    display: block; /* Element is displayed as block */
+}
+.display-contents {
+    display: contents; /* Only children are displayed */
+}
+.display-list-item {
+    display: list-item; /* Element is displayed as list item */
+}
+
+/* Long Page with Smooth Scroll Links */
+.scroll-link {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: blue;
+}
+html {
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+/* Padding and Margin Example */
+.padding-box {
+    padding: 20px; /* Padding of 20px */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Margin to separate from the next box */
+}
+.margin-box {
+    margin: 20px; /* Margin of 20px */
+    background-color: #d0d0d0;
+    border: 1px solid #999;
+    padding: 10px; /* Padding to see the difference */
+}
+
+/* Multiple Background Images */
+.multiple-backgrounds {
+    background-image: url('background1.jpg'), url('background2.jpg'); /* Multiple background images */
+    background-size: 50% 50%, 100% 100%; /* Adjustable sizes */
+    background-position: top left, bottom right; /* Positions of the backgrounds */
+    background-repeat: no-repeat, no-repeat; /* No repeat */
+    height: 400px; /* Height to see the backgrounds */
+    border: 1px solid black; /* Border to visualize the div */
+}

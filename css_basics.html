@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS all Basics</title>
+    <style>
+        /* CSS Comments */
+        /* Section 1: Background color and image */
+        .background-section {
+            background-color: lightblue; /* Background color of the page */
+            background-image: url('your-image-url.jpg'); /* Background image of the page */
+            background-attachment: fixed; /* Image should not scroll with the rest of the page */
+            background-size: cover; /* Specify the size of the background image */
+            height: 100vh; /* Full height for demonstration */
+            padding: 20px; /* Padding for the content inside the section */
+            margin-bottom: 20px; /* Margin at the bottom to separate sections */
+        }
+
+        /* Section 2: Different border styles */
+        .border-section {
+            border-top: 5px solid red; /* Top border: solid */
+            border-right: 5px dotted green; /* Right border: dotted */
+            border-bottom: 5px dashed blue; /* Bottom border: dashed */
+            border-left: 5px double yellow; /* Left border: double */
+            padding: 20px; /* Padding for content inside the border */
+            margin: 20px; /* Margin around the border section */
+            background-color: white; /* Background color for visibility */
+        }
+
+        /* Section 3: Width and height in pixels and percentages */
+        .size-section {
+            height: 300px; /* Height in pixels */
+            width: 50%; /* Width in percentage */
+            background-color: lightgrey; /* Background color for visibility */
+            padding: 20px; /* Padding for content inside the section */
+            margin: 20px auto; /* Center the section horizontally */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        /* Section 4: Font styles, sizes, families, colors, and text alignment */
+        .font-section {
+            font-family: 'Arial', sans-serif; /* Font family */
+            font-size: 20px; /* Font size */
+            color: darkblue; /* Font color */
+            text-align: center; /* Text alignment */
+            padding: 20px; /* Padding for content inside the section */
+            margin: 20px; /* Margin around the font section */
+            background-color: lightyellow; /* Background color for visibility */
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1: Background color and image -->
+    <div class="background-section">
+        <h1>Background Color and Image</h1>
+        <p>This section demonstrates a background color with an image that does not scroll.</p>
+    </div>
+
+    <!-- Section 2: Different border styles -->
+    <div class="border-section">
+        <h2>Border Styles</h2>
+        <p>This section demonstrates different border styles on each side.</p>
+    </div>
+
+    <!-- Section 3: Width and height in pixels and percentages -->
+    <div class="size-section">
+        <h2>Width and Height</h2>
+        <p>This section demonstrates setting the width and height using both pixels and percentages.</p>
+    </div>
+
+    <!-- Section 4: Font styles, sizes, families, colors, and text alignment -->
+    <div class="font-section">
+        <h2>Font Styles</h2>
+        <p>This section demonstrates different font styles, sizes, families, colors, and text alignment.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #280589;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #2d88e9;
+        }
+        .container {
+            padding: 20px;
+        }
+        .important {
+            font-weight: bold;
+            color: rgb(158, 8, 8);
+        }
+        .italic {
+            font-style: italic;
+        }
+        ul {
+            list-style-type: square;
+        }
+        blockquote {
+            border-left: 5px solid #056fa4;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #99e3f3;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #7e0505;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+        }
+        .highlight {
+            background-color: rgb(177, 242, 127);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Basics  of HTML</h1>
+    </header>
+
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+
+    <div class="container">
+        <section id="section1">
+            <h2>Introduction</h2>
+            <p>This is a <span class="italic">basic</span> webpage designed to demonstrate various HTML tags.</p>
+            <p><span class="important">Important:</span> HTML is the standard markup language for creating web pages.</p>
+        </section>
+
+        <section id="section2">
+            <h2>Common HTML Tags</h2>
+            <p>Here are some commonly used HTML tags:</p>
+            <ul>
+                <li>Headings</li>
+                <li>Paragraphs</li>
+                <li>Italic and Bold text</li>
+                <li>Anchors</li>
+                <li>Lists</li>
+                <li>Labels</li>
+                <li>Blockquotes</li>
+                <li>Horizontal Rules</li>
+                <li>Images</li>
+                <li>Divisions and Spans</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2>Example of HTML Elements</h2>
+            <label for="sample">This is a label for an input:</label>
+            <input type="text" id="sample" name="sample">
+            <p>Below is an example of a blockquote:</p>
+            <blockquote>
+                "This is a blockquote. It is used to quote a section from another source."
+            </blockquote>
+            <hr>
+            <p>Here is an image:</p>
+            <img src="Picture.jpg" alt="Placeholder Image" width="120">
+            <div>
+                <p>This is a division with a <span class="highlight">highlighted span</span> inside it.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Footer Content &copy; 2024</p>
+    </footer>
+</body>
+</html>
